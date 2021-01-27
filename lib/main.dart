@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Raleway',
       ),
       home: CategoriesScreen(),
-      
+      routes:  {
+        '/categories-meals': (ctx) => CategoryMealScreen()
+      },
     );
   }
 }

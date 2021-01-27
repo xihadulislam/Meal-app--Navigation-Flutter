@@ -14,8 +14,7 @@ class CategoriesScreen extends StatelessWidget {
         children: CATEGORIES
             .map(
               (catData) => CategoryItem(
-                catData.title,
-                catData.color,
+                catData
               ),
             )
             .toList(),
