@@ -17,9 +17,6 @@ class CategoryItem extends StatelessWidget {
     Navigator.of(context).pushNamed(CategoryMealScreen.routeName, arguments: category);
   }
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -28,11 +25,15 @@ class CategoryItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(16),
       child: Container(
         padding: const EdgeInsets.all(15),
-        child: Text(
-          category.title,
-          style: TextStyle(
-              fontSize: 20,  color: Colors.white),
+        child: Center(
+          child: Text(
+            category.title,
+            style: TextStyle(
+                fontSize: 20,  color: Colors.white),
+            textAlign: TextAlign.center,
+          ),
         ),
+
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
